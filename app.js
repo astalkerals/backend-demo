@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const port = process.env.PORT || 4000 
+
 
 //testdb is name of database, it will automatically make it
 mongoose
