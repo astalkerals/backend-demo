@@ -1,0 +1,23 @@
+:root{
+    --caption-text: #7a1f1f;
+    --background-edges: #370e0e;
+    --caption-background: #f4e9e9;
+}
+
+body{
+    background: var(--caption-background);
+    color: var(--caption-text);
+}
+
+body h1{
+    text-align: center;
+}
+
+@media (min-width: 500px){
+    .columns{
+        display: flex;
+    }
+    .one{
+        flex: 1;
+    }
+}
