@@ -7,10 +7,15 @@
 body{
     background: var(--caption-background);
     color: var(--caption-text);
+    text-align: center;
 }
 
 body h1{
     text-align: center;
+}
+
+body a{
+    color: var(--caption-text);
 }
 
 @media (min-width: 500px){
