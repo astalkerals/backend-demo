@@ -127,7 +127,7 @@ app.get("/api/characters", (req, res) => {
 });
 
 app.get("/api/characters/:id", (req, res) => {
-  const character = characters.find((c) => c._id === parseInt(req.params.id));
+  const character = characters.find((c) => parseInt(c._id) === parseInt(req.params.id));
   res.send(character);
 });
 
