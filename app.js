@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
+const Joi = require("joi");
 //openbrewerydb.org
 const app = express();
 app.use(express.static("public"));
@@ -14,11 +15,11 @@ const storage = multer.diskStorage({
     filename: (req, file, cb) => {
       cb(null, file.originalname);
     },
-  });
+});
   
-  const upload = multer({ storage: storage });
+const upload = multer({ storage: storage });
 
-  let characters = [
+let characters = [
     {
         "_id" : "1",
         "name" : "Elaine Fitzterbach",
@@ -129,6 +130,53 @@ app.get("/api/characters/:id", (req, res) => {
   const character = characters.find((c) => parseInt(c._id) === parseInt(req.params.id));
   res.send(character);
 });
+
+app.post("/api/characters", upload.single("img"), (req,res) => {
+  //console.log("In post request");
+  //console.log(req.body);
+  const result = validateCharacter(req.body);
+
+  if(result.error){
+    console.log("Error in validation");
+    res.status(400).send(result.error.details[0].message);
+    return;
+    
+  }
+  console.log("Passed validation");
+
+  const char = {
+    _id:characters.length+1,
+    name:req.body.name,
+    occupation:req.body.occupation,
+    generalBackground:req.body.generalBackground,
+    personality:req.body.personality,
+    relationToDeceased:req.body.relationToDeceased,
+    suspiciousAttributes:req.body.suspiciousAttributes,
+    biggestSecret:req.body.biggestSecret
+  }
+  
+  if(req.file){
+    char.imgsrc = req.file.filename;
+  }
+
+  characters.push(char);
+  res.status(200).send(char);
+});
+
+const validateCharacter = (char) => {
+  const schema = Joi.object({
+    _id:Joi.allow(""),
+    name:Joi.string().min(3).required(),
+    occupation:Joi.string().min(3).required(),
+    generalBackground:Joi.string().min(0).required(),
+    personality:Joi.string().min(0).required(),
+    relationToDeceased:Joi.string().min(0).required(),
+    suspiciousAttributes:Joi.string().min(0).required(),
+    biggestSecret:Joi.string().min(0).required()
+  });
+
+  return schema.validate(char);
+};
 
 //listen for incoming requests
 app.listen(3002, () => {
