@@ -122,12 +122,14 @@ let characters = [
     
 ]
 
+let idCount = characters.length+1;
+
 app.get("/api/characters", (req, res) => {
   res.send(characters);
 });
 
 app.get("/api/characters/:id", (req, res) => {
-  const character = characters.find((c) => parseInt(c._id) === parseInt(req.params.id));
+  const character = characters.find((c) => String(c._id) === String(req.params.id));
   res.send(character);
 });
 
@@ -144,8 +146,10 @@ app.post("/api/characters", upload.single("img"), (req,res) => {
   }
   console.log("Passed validation");
 
+  idCount += 1;
+
   const char = {
-    _id:characters.length+1,
+    _id:idCount,
     name:req.body.name,
     occupation:req.body.occupation,
     generalBackground:req.body.generalBackground,
@@ -162,6 +166,70 @@ app.post("/api/characters", upload.single("img"), (req,res) => {
   characters.push(char);
   res.status(200).send(char);
 });
+
+app.put("/api/characters/:id", upload.single("img"), (req,res) => {
+  console.log("in put");
+  const character = characters.find(c => c._id === String(req.params.id));
+  const result = validateCharacter(req.body);
+
+  if(result.error){
+    console.log("Error in validation");
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
+  if(!character){
+    res.status(404).send("The character you wanted to modify is not available");
+    return;
+  }
+  
+  character.name = req.body.name;
+  character.occupation = req.body.occupation;
+  character.generalBackground = req.body.generalBackground;
+  character.personality = req.body.personality;
+  character.relationToDeceased = req.body.relationToDeceased;
+  character.suspiciousAttributes = req.body.suspiciousAttributes;
+
+  if(req.file){
+    character.imgsrc = req.file.filename;
+  }
+
+  res.status(200).send(character);
+  
+});
+
+app.delete("/api/characters/:id", (req,res) => {
+  console.log("in delete");
+  const character = characters.find((c) => String(c._id) === String(req.params.id));
+
+  console.log("req.params.id =", req.params.id);
+console.log("characters =", characters.map(c => c._id));
+  if(!character){
+    res.status(404).send("The character you wanted to delete is not available");
+    return;
+  }
+
+  const index = characters.indexOf(character);
+  characters.splice(index, 1);
+  res.status(200).send(character);
+});
+
+/*app.delete("/api/characters/:id", (req, res) => {
+  console.log("delete requested for id:", req.params.id);
+
+  const character = characters.find(
+    (c) => String(c._id) === String(req.params.id)
+  );
+
+  if (!character) {
+    res.status(404).send("The character you wanted to delete is not available");
+    return;
+  }
+
+  const index = characters.indexOf(character);
+  characters.splice(index, 1);
+  res.status(200).send(character);
+});*/
 
 const validateCharacter = (char) => {
   const schema = Joi.object({
