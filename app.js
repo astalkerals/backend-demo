@@ -178,6 +178,8 @@ const validateCharacter = (char) => {
 };
 
 //listen for incoming requests
-app.listen(3002, () => {
+const port = process.env.PORT || 3002;
+
+app.listen(port, () => {
   console.log("Server is up and running");
 });
