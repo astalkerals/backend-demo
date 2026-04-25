@@ -1,0 +1,102 @@
+[
+    {
+        "id" : "1",
+        "name" : "Elaine Fitzterbach",
+        "occupation" : "Rich",
+        "generalBackground" : "Elaine Fitzterbach is an incredibly wealthy and snobbish woman who inherited her riches from her grandfather (Sebastian Fitzterbach), the heir to Fitzterbach Industries, a soap and candle company from the 1800s. Her family is prestigious enough and her wealth plentiful enough for her to feel comfortable with her life, so while she may come across rather arrogant and rude, she doesn’t really have ill-intentions toward others.",
+        "personality" : "Incredibly rich; little interest in other people.",
+        "relationToDeceased" : "Is her biggest investor for her charity and one of her closest friends.",
+        "suspiciousAttributes" : "Her wealthy grandfather died when she was a young adult and it’s rumored that it was under suspicious circumstances.",
+        "biggestSecret" : "Bought drugs from Snoop Dog one time. Doesn’t care if anyone finds out because she’s so rich that she could just pay people off or bribe her way out of jail.",
+        "imgsrc" : "aielaine.jpg" 
+    },
+    {
+        "id" : "2",
+        "name" : "Carlise Theron",
+        "occupation" : "(Actor) Vampire",
+        "generalBackground" : "Carlise’s real name is Carl Thabat. He was born in Iowa and raised in a typical midwestern family. It wasn’t until he was cast in Midnight, a movie adaptation of a well-known vampire-romance novel, that he began to think he was destined for something more. He realized that he was meant to become an actual vampire, and he made it his life goal to do so, at any cost.",
+        "personality" : "Constantly pretending to be a vampire (one of the really dramatic, twilight-esque ones too) Thinks the people around him actually believe he is one.",
+        "relationToDeceased" : "Is a celebrity endorser of Koinz For Kidz, so they are well acquainted with one another.",
+        "suspiciousAttributes" : "A weirdo.",
+        "biggestSecret" : "He is in love with Winona Pyrix-McIntosh. They had an affair while she was married and she doesn’t want anyone to find out about it.",
+        "imgsrc" : "aicarlise.avif"
+    },
+    {
+        "id" : "3",
+        "name" : "Jesse Manpink",
+        "occupation" : "Professor",
+        "generalBackground" : "Jesse Minkpen is a professor at _____ University with a PhD in botany. She is a renowned professor with a steady and notable income.",
+        "personality" : "Very clever and prestigious, kind of a snob (as they all are).",
+        "relationToDeceased" : "Knows her from college and is friends with her.",
+        "suspiciousAttributes" : "Related almost entirely to the biggestSecret (her motive), also she has a degree in botany, which could allow her more easy access to the poison, depending on what it is.",
+        "biggestSecret" : "While in college, she grew weed and shrooms out of her dorm. While attempting to expand her business, she burned down the university’s science building after attempting to cook meth in one of the labs using Breaking Bad as a tutorial.",
+        "imgsrc" : "ai-jesse.png"
+    },
+    {
+        "id" : "4",
+        "name" : "Mitchell Mitchell",
+        "occupation" : "Politician (Presidential Candidate)",
+        "generalBackground" : "Mitchell Mitchell is a Southern politician with ambitions to become the next American president. He is a member of the demorepublilibergreen party and he has a lot of “new and innovative” ideas he wishes to enrich America with. He currently lives in Georgia with his wife, Michelle Mitchell, and his two sons, Michael and Mitchell Jr.",
+        "personality" : " A people pleaser, his political views have to be somewhat moderate (at least not extremist), but I will let you determine the specifics.",
+        "relationToDeceased" : "his campaign is backed by Koins For Kids, so he is closely affiliated with her publicly.",
+        "suspiciousAttributes" : "Incredibly motivated by public approval, would do anything to protect his image.",
+        "biggestSecret" : "Used millions of dollars from his Campaign funding to invest in crypto, thinking he’d be able to “make it back and more.” He didn’t. Charity and Helpathetots helped him doctor the books to cover it up.",
+        "imgsrc" : "aimitchel^2.jpg"
+    },
+    {
+        "id" : "5",
+        "name" : "Hannah Honeydew",
+        "occupation" : "Well-known Influencer",
+        "generalBackground" : "Hannah Honeydew was raised in a very conservative background with little room for self-expression. In college, however, she realized she was a lesbian and became radicalized, developing the typical leftist beliefs many assume in college. Then, after returning to her hometown, she realized she did not want to give up the approval of her family and those around her, and reverted to her initial state, becoming a Tradwife influencer as a cover.",
+        "personality" : "Tradwife; Was secretly leftist in college but no one can know that because she’s cultivated her image around being a Tradwife.",
+        "relationToDeceased" : "Friend. They met through Jesse Manpink",
+        "suspiciousAttributes" : "Very determined to keep her persona going and motivated by upholding her moderate Instagram following.",
+        "biggestSecret" : "Her husband, Harry Honeydew, is fake. She made him up because she’s a lesbian and never actually wanted to live the Tradwife lifestyle.",
+        "imgsrc" : "ai-hannah.jpg"
+    },
+    {
+        "id" : "6",
+        "name" : "Winona Pyrix-McIntosh",
+        "occupation" : "owner of a tupperware MLM",
+        "generalBackground" : "Winona Pyrix-McIntosh is an entrepreneur who owns the multi-level marketing business, Pyrix. It is a completely ethical business model that is not a pyramid scheme. She has been married to James Pyrix-McIntosh (his last name is McIntosh, hers is Pyrix) for 25 years.",
+        "personality" : "Constantly trying to sell people tupperware",
+        "relationToDeceased" : "College friend",
+        "suspiciousAttributes" : "Related almost entirely to her biggestSecret.",
+        "biggestSecret" : "Her husband, James’ biggestSecret is that he’s a brony, which he doesn’t want her to find out about it. She actually knows about it currently, but before she found out about it, she interpreted his secrecy as a sign of infidelity. Thinking he was cheating, she revenge-cheated on him with Carlise before finding out he was just a brony. She genuinely loves her husband and does not want him to find out she cheated on him.",
+        "imgsrc" : "ai-winona.png"
+    },
+    {
+        "id" : "7",
+        "name" : "James Pyrix-McIntosh",
+        "occupation" : "stay at home husband/father",
+        "generalBackground" : "James Pyrix-McIntosh is a loving husband and father who is married to Winona Pyrix-McIntosh, the owner of a tupperware mlm.",
+        "personality" : "Nerdy and paranoid; loves his wife; secretly incredibly confident when he is Jamesbodash",
+        "relationToDeceased" : "College friend",
+        "suspiciousAttributes" : "Paranoid about his wife finding out his biggest",
+        "biggestSecret" : "He’s a brony. He’s worried that his wife will judge him and think less of him if she finds out, so he very elaborately hides it from her. He collects My Little Pony figurines and has a Twitch channel where he streams to other bronies, watching My Little Pony and playing My Little Pony-themed video games.",
+        "imgsrc" : "ai-brony.png"
+    },
+    {
+        "id" : "8",
+        "name" : "Mini 'Dogs' Park",
+        "occupation" : "(Head of the Korean Chapter of Pyrix) Jimin’s husband",
+        "generalBackground" : "Mini Park, formerly known as Michael Miller, is often called “Dogs,” a nickname he gave himself because Jimin said in an interview that he would like to “talk to Dogs.” He works for an MLM, but his true passion is obsessing over BTS. He loves BTS (especially Jimin, who is his bias) and his entire life revolves around them, as he moved to Korea just for proximity. He believes himself to be married to Jimin “he just doesn’t know it yet” and spends his spare time attempting to find ways to feel closer to him.",
+        "personality" : "BTS",
+        "relationToDeceased" : "Knew her because of his affiliation with Winona Pyrix-McIntosh. She bailed him out of jail.",
+        "suspiciousAttributes" : "would do ANYTHING to impress Jimin and would be deeply upset if something prevented him from the possibility of interacting with him, making him a suspect.",
+        "biggestSecret" : "He was arrested for sneaking into BTS’s shared home to take photos with Jimin while he was asleep. Charity was in Korea for a meeting related to Koinz For Kidz and he called her to bail him out of jail, which she did. Because the move to have a restraining order filed against him did not go threw, he really doesn’t want the public’s attention to be brought to this event because he fears it could prevent him from having any chance to seeing Jimin in the future and eventually making their marriage real.",
+        "imgsrc" : "ai-dogs.webp" 
+    },
+    {
+        "id" : "9",
+        "name" : "Helpathetots Bankington",
+        "occupation" : "Co-owner of the “charity” Koinz For Kidz (also known as Koins for Kids, Coins for Kids, Koins for Kidz, Coinz for Kids, and even Koinz for Kids)",
+        "generalBackground" : "With her partner, Charity Falsifina, Helpathetots has been scamming children out of money donated to them for almost a decade. They run the charity",
+        "personality" : "Loves “the children” and wants to “help them”",
+        "relationToDeceased" : "Co-owner of their charity",
+        "suspiciousAttributes" : "Could have potentially benefited greatly from Charity’s death; she would then have full ownership of all of the “charity.”",
+        "biggestSecret" : "Doesn’t really have one; her biggestSecret is also Charity’s.",
+        "imgsrc" : "ai-helpathetots.png"
+    }
+    
+]

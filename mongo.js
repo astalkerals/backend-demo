@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 const port = process.env.PORT || 4000 
 
 
@@ -24,3 +24,4 @@ const message = new Message({
 });
 
 createMessage();
+*/
